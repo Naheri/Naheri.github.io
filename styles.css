@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: antiquewhite;
+}
+
+.navbar {
+    background-color: #666;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main-content {
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 2em; 
+    color: #333; 
+}
+
+
+.film-thumbnails {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.thumbnail {
+    margin: 10px;
+    width: 300px;
+    border: 2px solid #666; 
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.thumbnail:hover {
+    transform: scale(1.05); 
+}
+
+.thumbnail img {
+    width: 100%; 
+    height: 85%; 
+}
+
+
+
+
+.view-more-btn {
+    background-color: #666;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+
+    
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pres-text {
+    width: 58%;
+    padding-right: 20px; 
+    box-sizing: border-box; 
+    line-height: 1.6;
+}
+
+.gif-container {
+    width: 40%;
+    display: flex;
+    align-items: center; 
+}
+
+.gif-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; 
+    border-radius: 8px;
+}
+
+
+.film-link {
+    text-decoration: none; 
+    color: black;
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#searchResults {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#searchResults img {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.selected-film img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
